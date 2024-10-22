@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="javaScript.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Hamburger menu -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <!-- Regular links -->
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Projects/Skills
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/projects">Projects</a>
+              <a href="/skills">Skills</a>
+            </div>
+          </div>
+          <li><a href="/about">About</a></li>
+          <li><a href="/posts">Posts</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/profile">Profile</a></li>
+          <p class="reginhead"><a href="/register">Register</a></p>
+        </ul>
+
+        <!-- Hamburger menu links (for mobile) -->
+        <ul class="mobile-menu" id="mobileMenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/skills">Skills</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/posts">Posts</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/profile">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="spacer"></div>
+    <div id="principal" class="homediv">
+      <div class="about">
+        <div
+          class="intro intro1"
+          onmouseover="intro1heigh(this)"
+          onmouseout="intro1(this)"
+        >
+          <a href="/contact">
+            <p>
+              My name is Erik Sandqvist and i'm 20 years old. I'm from Jönköping
+              and I have lived here my whole life. I like to write code and play
+              sports. I enjoy making things better, I think it is fun to create
+              and find solutions. I'm currently working at a warehouse while I
+              study.
+              <br /><br />
+              Contact me
+            </p>
+          </a>
+        </div>
+
+        <div class="intro intro2">
+          <a href="/projects">
+            <p>
+              Projects<br /><br />
+              Projects that I have been working on in the past. click here to
+              check them out, you could also check out wich skills I used if you
+              go to a specific project. Or check out my skills from the header.
+            </p>
+
+            <i class="fa fa-camera"></i>
+          </a>
+        </div>
+        <div class="intro intro3">
+          <a href="/about">
+            <p>
+              CV<br /><br />Information about me, like education and previous
+              workplaces.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

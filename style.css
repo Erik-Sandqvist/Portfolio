@@ -1,0 +1,291 @@
+/* --------
+Global
+-------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  background-color: #333;
+  background-image: url("pics/back2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  font-family: "Roboto Slab", serif;
+}
+.spacer {
+  width: 100%;
+  height: 8vw;
+}
+@media screen and (max-width: 800px) {
+  .spacer {
+    height: 18vw;
+  }
+}
+.middle {
+  margin: 0 auto;
+  width: 60%;
+}
+/* --------
+  Header CSS
+  -------- */
+header {
+  background-color: yellow;
+  width: 100%;
+  height: 6vw;
+  box-shadow: 0px 5px rgb(106, 112, 2);
+  font-family: "Roboto Slab", serif;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+/* Regular navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10vw;
+}
+
+/* Hide mobile menu links initially */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 16vw;
+  left: 0;
+  width: 80%;
+  height: 108vw;
+  background-color: rgb(195, 195, 3);
+}
+
+.mobile-menu li {
+  text-align: center;
+  padding: 1vw 0;
+}
+
+/* Hamburger icon */
+.hamburger {
+  font-size: 12vw;
+  cursor: pointer;
+  margin-left: 2vw;
+  display: none; /* Hide by default */
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.5vw;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(78, 79, 0);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #d9df31;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Links */
+nav a {
+  text-decoration: none;
+  padding: 1vw;
+  font-size: 1.5vw;
+  color: black;
+}
+.avatar {
+  margin-right: 1vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+nav p {
+  font-family: "Roboto Slab", serif;
+  margin-left: auto;
+  font-size: 1.5vw;
+  padding-right: 1vw;
+}
+.reginhead {
+  margin-left: 0;
+}
+/* Show the hamburger menu on small screens */
+@media (max-width: 768px) {
+  nav ul.menu {
+    display: none; /* Hide the regular menu */
+  }
+  header {
+    height: 18vw;
+  }
+  .hamburger {
+    display: block; /* Show the hamburger menu */
+  }
+
+  .mobile-menu.show {
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+    position: fixed;
+  }
+
+  nav p {
+    font-size: 5.5vw;
+    padding-right: 10vw;
+    margin: 0 auto;
+  }
+  .reginhead {
+    margin: 0 auto;
+    color: #104279;
+  }
+  nav a {
+    font-size: 5.5vw;
+  }
+  .avatar {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+/*End of header css*/
+
+/* --------
+Home CSS
+-------- */
+.homediv {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.about {
+  margin: 0 auto;
+  width: 90%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.intro a {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+.intro {
+  width: 25%;
+  height: 360px;
+  background-color: yellow;
+  border: 2px solid black;
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  padding: 0vw 2vw;
+  box-shadow: #000304 4px 10px;
+  display: flex;
+  min-height: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.intro:hover {
+  transform: scale(1.05);
+  box-shadow: #000304 6px 14px;
+  z-index: 0;
+}
+.intro1 {
+  margin-left: 8%;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+}
+.intro2 {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.intro3 {
+  margin-right: 8%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .about {
+    margin: 0 auto;
+    width: 100%;
+    height: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .homediv {
+    height: auto;
+  }
+  .intro {
+    width: 78%;
+    height: 360px;
+    margin: 0 auto;
+    background-color: yellow;
+    border: 2px solid black;
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+    box-shadow: black 4px 10px;
+    cursor: pointer;
+  }
+}
