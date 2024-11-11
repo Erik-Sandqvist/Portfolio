@@ -5,11 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab", serif;
-  background-color: #333;
-  background-image: url("pics/back2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #0e0724;
 }
 a {
   color: white;
@@ -47,12 +43,13 @@ header {
 /* Regular navigation menu */
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 10vw;
+  margin-left: 18vw;
+}
+.liright {
+  margin-right: 30vw;
 }
 
 /* Hide mobile menu links initially */
