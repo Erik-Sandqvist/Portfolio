@@ -27,11 +27,16 @@ ul {
   margin: 0 auto;
   width: 60%;
 }
+.mylogosmall {
+  width: 6vw;
+  display: block;
+  margin-right: 10vw;
+}
 /* --------
   Header CSS
   -------- */
 header {
-  background-color: yellow;
+  background-color: #0e0724;
   width: 100%;
   height: 6vw;
   box-shadow: 0px 5px rgb(106, 112, 2);
@@ -46,7 +51,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 18vw;
+  margin-left: 4vw;
 }
 .liright {
   margin-right: 30vw;
@@ -86,7 +91,7 @@ nav ul {
   font-size: 1.5vw;
   border: none;
   outline: none;
-  color: black;
+  color: #d9df31;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -109,7 +114,7 @@ nav ul {
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: #d9df31;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -128,7 +133,7 @@ nav a {
   text-decoration: none;
   padding: 1vw;
   font-size: 1.5vw;
-  color: black;
+  color: #d9df31;
 }
 .avatar {
   margin-right: 1vw;
@@ -187,79 +192,16 @@ nav p {
 /* --------
 Home CSS
 -------- */
-.homediv {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+.section1 {
+  color: #e8e100;
+  font-size: 6vw;
+  text-indent: 8vw;
 }
-.about {
-  margin: 0 auto;
-  width: 90%;
-  height: 400px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-}
-
-.intro a {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  color: inherit;
-  text-decoration: none;
-}
-.intro {
-  width: 25%;
-  height: 360px;
-  background-color: yellow;
-  border: 2px solid black;
-  font-family: "Roboto Slab", serif;
-  font-size: 1rem;
-  padding: 0vw 2vw;
-  box-shadow: #000304 4px 10px;
-  display: flex;
-  min-height: 360px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.intro:hover {
-  transform: scale(1.05);
-  box-shadow: #000304 6px 14px;
-  z-index: 0;
-}
-.intro1 {
-  margin-left: 8%;
-  margin-top: 20px;
-  flex-wrap: nowrap;
-}
-.intro2 {
-  margin-left: 6%;
-  margin-right: 6%;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-.intro3 {
-  margin-right: 8%;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-}
-
-div.scroll-container {
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
+.section2 {
   width: 80%;
   margin: 0 auto;
-  border-radius: 2px;
-}
-
-div.scroll-container img {
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
 }
 @media screen and (max-width: 800px) {
   .about {
@@ -285,4 +227,12 @@ div.scroll-container img {
     box-shadow: black 4px 10px;
     cursor: pointer;
   }
+}
+
+/* Personal branding */
+.myvideo {
+  display: block;
+  width: 10vw;
+  height: 5vw;
+  margin: 0 auto;
 }
