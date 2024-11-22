@@ -151,12 +151,14 @@ nav p {
   }
   nav ul {
     margin-left: 0;
+
   }
   .mobile-menu li {
     margin-left: 0;
   }
   .mobile-menu {
     width: auto;
+    padding-right: 10vw;
   }
   header {
     height: 16vw;
