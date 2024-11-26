@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script src="javaScript.js" defer></script>
+    <script src="script.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
       rel="stylesheet"
@@ -13,16 +13,42 @@
   </head>
   <body>
     <header>
-      <div id="header"></div>
-      <script>
-        // Hämta och inkludera headern
-        fetch("header.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("header").innerHTML = data;
-          });
-      </script>
+      <nav>
+        <!-- Hamburger menu -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+        <!-- Regular links -->
+        <ul class="menu">
+          <li><img src="pics/mylogosmall.svg" class="mylogosmall" /></li>
+          <li><a href="index.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Projects/Skills
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="projects.html">Projects</a>
+              <a href="personalbrending.html">Skills</a>
+            </div>
+          </div>
+          <li><a href="/about">About</a></li>
+          <li><a href="/posts">Posts</a></li>
+          <li><a href="/contact" class="liright">Contact</a></li>
+        </ul>
+    
+        <!-- Hamburger menu links (for mobile) -->
+        <ul class="mobile-menu" id="mobileMenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/skills">Skills</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/posts">Posts</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/profile">Profile</a></li>
+        </ul>
+      </nav>
     </header>
+    
     <div class="spacer"></div>
     <div class="section1">
       Erik Sandqvist

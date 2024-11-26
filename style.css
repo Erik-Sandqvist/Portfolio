@@ -66,21 +66,21 @@ nav ul {
 .mobile-menu {
   display: none;
   flex-direction: column;
-  position: absolute;
-  top: 16vw;
-  left: 0;
-  width: 80%;
-  height: 108vw;
+
+  width: 100%;
+  min-height: 108vw;
   background-color: rgb(195, 195, 3);
 }
 
 .mobile-menu li {
   text-align: center;
   padding: 1vw 0;
+  color: #0e0724;
 }
 
 /* Hamburger icon */
 .hamburger {
+  color: #e8e100;
   font-size: 12vw;
   cursor: pointer;
   margin-left: 2vw;
@@ -140,29 +140,33 @@ nav a {
   font-size: 1.5vw;
   color: #d9df31;
 }
-.avatar {
-  margin-right: 1vw;
-  width: 2.5vw;
-  height: 2.5vw;
-  border-radius: 50%;
-  vertical-align: middle;
-}
+
 nav p {
   font-family: "Roboto Slab", serif;
   margin-left: auto;
   font-size: 1.5vw;
   padding-right: 1vw;
 }
-.reginhead {
-  margin-left: 0;
-}
+
 /* Show the hamburger menu on small screens */
 @media (max-width: 768px) {
   nav ul.menu {
     display: none; /* Hide the regular menu */
+    
+  }
+  nav ul {
+    margin-left: 0;
+
+  }
+  .mobile-menu li {
+    margin-left: 0;
+  }
+  .mobile-menu {
+    width: auto;
+    padding-right: 10vw;
   }
   header {
-    height: 18vw;
+    height: 16vw;
   }
   .hamburger {
     display: block; /* Show the hamburger menu */
@@ -170,27 +174,15 @@ nav p {
 
   .mobile-menu.show {
     display: flex;
-    margin-left: 0;
     width: 100%;
     position: fixed;
   }
-
-  nav p {
-    font-size: 5.5vw;
-    padding-right: 10vw;
-    margin: 0 auto;
-  }
-  .reginhead {
-    margin: 0 auto;
-    color: #104279;
-  }
   nav a {
-    font-size: 5.5vw;
+    font-size: 6.5vw;
+    color: #0e0724;
+    margin: 0 auto;
   }
-  .avatar {
-    width: 4vw;
-    height: 4vw;
-  }
+
 }
 /*End of header css*/
 
@@ -200,11 +192,12 @@ Home CSS
 .section1 {
   color: #e8e100;
   font-size: 6vw;
-  text-indent: 8vw;
+  text-indent: 26vw;
 }
 .section2 {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+  color: #e8e100;
   display: flex;
   flex-direction: row;
 }
@@ -235,6 +228,13 @@ Home CSS
     font-size: 1rem;
     box-shadow: black 4px 10px;
     cursor: pointer;
+  }
+  .section1 {
+   margin-top: 2vw;
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
