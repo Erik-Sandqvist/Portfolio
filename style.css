@@ -1,6 +1,20 @@
 /* --------
 Global
 -------- */
+html {
+  color-scheme: light dark;
+}
+html {
+  --bg-color: #ffffff;
+  --txt-color: #000000;
+}
+
+@supports (background-color: Canvas) and (color: CanvasText) {
+  :root {
+      --bg-color: Canvas;
+      --txt-color: CanvasText;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -33,9 +47,10 @@ ul {
   margin-right: 10vw;
 }
 .mepic {
-  width: 18vw;
+  width: 24vw;
   display: block;
   margin-right: 10vw;
+  margin-top: 2vw;
 }
 /* --------
   Header CSS
@@ -191,7 +206,7 @@ Home CSS
 -------- */
 .section1 {
   color: #e8e100;
-  font-size: 6vw;
+  font-size: 4vw;
   text-indent: 26vw;
 }
 .section2 {
@@ -204,6 +219,27 @@ Home CSS
 .shortme {
   color: #e8e100;
   font-size: 1.5vw;
+}
+.projectssection
+{
+width: 90%;
+margin: 0 auto;
+margin-top: 2vw;
+min-height: 40vw;
+border: #e8e100 solid 1px;
+display: flex;
+flex-wrap: wrap;
+gap: 3vw; /* Space between boxes */
+padding: 10px;
+justify-content: center;
+}
+.oneprojectingallery{
+  width: 10vw;
+  height: 14vw;
+  min-height: 12vw;
+  flex: 0 0.5 calc(30% -  3vw);/* 33.33% width with space for the gap */
+    background-color: lightgray;
+  border: #e8e100 solid 1px;
 }
 @media screen and (max-width: 800px) {
   .about {
@@ -247,8 +283,6 @@ Home CSS
 }
 
 /* Projects */
-.projectssection {
-}
 
 /* CV */
 .backcv {
